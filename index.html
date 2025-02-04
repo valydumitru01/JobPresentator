@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CV Generator</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<nav>
+    <ul>
+        <li></li>
+        <li></li>
+    </ul>
+</nav>
+<div class="form-container">
+    <h1>CV Generator</h1>
+    <div id="form"></div>
+</div>
+<div id="preview"></div>
+<script src="main.js" type="module"></script>
+<script>
+    enum Page {
+        FORM = 'form',
+        PREVIEW = 'preview'
+    }
+
+    function goTo(page: Page) {
+        window.location.href = page;
+    }
+</script>
+</body>
+</html>
